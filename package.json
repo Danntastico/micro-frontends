@@ -45,7 +45,10 @@
     "bootstrap": "4.4.1",
     "bootstrap-vue": "2.2.2",
     "micro-frontends-layout": "^0.2.3",
+    "micro-frontends-todolist": "^0.1.2",
+    "micro-frontends-weather": "^0.2.4",
     "single-spa": "^4.4.2",
+    "single-spa-angular-app": "^0.1.4",
     "single-spa-vue": "^1.8.2",
     "zone.js": "^0.10.3"
   }
