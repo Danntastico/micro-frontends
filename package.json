@@ -1,5 +1,8 @@
 {
   "version": "0.1.0",
+  "engines": {
+    "node": "12.16.x"
+  },
   "main": "./src/root-config.js",
   "scripts": {
     "serve": "webpack-dev-server",
