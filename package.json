@@ -1,5 +1,6 @@
 {
   "version": "0.1.0",
+  "main": "./src/root-config.js",
   "scripts": {
     "serve": "webpack-dev-server",
     "start": "node server.js",
