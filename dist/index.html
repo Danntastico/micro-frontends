@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Micro Frontends</title>
+    <meta name="importmap-type" content="systemjs-importmap" />
+    <script
+      type="systemjs-importmap"
+      src="https://storage.googleapis.com/react.microfrontends.app/importmap.json"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      System.import("@endava/root-config");
+    </script>
+    <div id="micro-frontends-layout" style="width: auto;"></div>
+    <div>
+      <section>
+        <div id="react-app"></div>
+      </section>
+      <section>
+        <div id="angular-app"></div>
+      </section>
+    </div>
+    <div id="auth-app"></div>
+
+    <import-map-overrides-full
+      show-when-local-storage="devtools"
+      dev-libs
+    ></import-map-overrides-full>
+  </body>
+</html>
